@@ -1,0 +1,20 @@
+# Ignore specific large files
+venv/Lib/site-packages/torch/lib/dnnl.lib
+venv/Lib/site-packages/torch/lib/torch_cpu.dll
+
+# Ignore the entire virtual environment (optional but recommended)
+venv/
+
+# Ignore Python bytecode files
+__pycache__/
+
+# Ignore pytest cache
+.pytest-cache/
+
+# Ignore data directory
+data/
+
+# Ignore virtual environment folder
+venv/
+
+README.md
