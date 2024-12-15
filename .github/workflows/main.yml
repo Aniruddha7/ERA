@@ -19,10 +19,15 @@ jobs:
         python -m pip install --upgrade pip
         pip install torch torchvision pytest
     
+    - name: Debug file structure
+      run: |
+        echo "🔍 Listing files in repository..."
+        ls -R
+    
     - name: Train model
       run: |
         echo "🚀 Training MNIST model for 1 epoch..."
-        Session5/python MNIST.py
+        python Session5/MNIST.py
     
     - name: Run model validation tests
       run: |
@@ -30,7 +35,7 @@ jobs:
         echo "Test 1: Checking if model has less than 25000 parameters"
         echo "Test 2: Verifying training accuracy > 95% after 1 epoch"
         echo "Test 3: Verifying validation accuracy > 95% after 1 epoch"
-        pytest test_model.py -v
+        pytest  Session5/test_model.py -v
     
     - name: Upload trained model
       if: success()
