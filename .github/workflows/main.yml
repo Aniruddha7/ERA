@@ -22,7 +22,7 @@ jobs:
     - name: Train model
       run: |
         echo "🚀 Training MNIST model for 1 epoch..."
-        python MNIST.py
+        Session5/python MNIST.py
     
     - name: Run model validation tests
       run: |
@@ -37,7 +37,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: trained-model
-        path: /Session5/mnist_model_*.pth
+        path: Session5/mnist_model_*.pth
     
     - name: Check test results
       if: success()
