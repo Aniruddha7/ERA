@@ -34,7 +34,6 @@ jobs:
         echo "🔍 Running validation tests..."
         echo "Test 1: Checking if model has less than 25000 parameters"
         echo "Test 2: Verifying training accuracy > 95% after 1 epoch"
-        echo "Test 3: Verifying validation accuracy > 95% after 1 epoch"
         pytest  Session5/test_model.py -v
     
     - name: Upload trained model
