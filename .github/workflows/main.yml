@@ -49,4 +49,3 @@ jobs:
         echo "✅ All tests passed!"
         echo "✓ Model size is within limits (< 25000 parameters)"
         echo "✓ Achieved >95% training accuracy in 1 epoch"
-        echo "✓ Achieved >95% validation accuracy in 1 epoch"
