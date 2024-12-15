@@ -1,3 +1,4 @@
+[![ML Pipeline](https://github.com/Aniruddha7/ERA_V3/actions/workflows/main.yml/badge.svg)](https://github.com/Aniruddha7/ERA_V3/actions/workflows/main.yml)
 
 # MNIST Classification with CI/CD Pipeline
 
