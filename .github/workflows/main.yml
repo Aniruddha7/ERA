@@ -34,7 +34,7 @@ jobs:
     
     - name: Upload trained model
       if: success()
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: trained-model
         path: mnist_model_*.pth
